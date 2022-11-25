@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Club LOGIN</title>
+
+    <link rel="stylesheet" href="./assets/ccs/styleVerificacion.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
+ 
+
+    <!-- copiar esto en todos los html -->
+     
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js" integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+
+
+</head>
+<body>
+    <form action="" class="form-box">
+        <img src="./assets/images/login logo white_1.png" width="200" alt="">
+        <h3 class="form-title">Verificación</h3>
+        <input type="text" placeholder="Codigo" id="codigoUser">
+        <button class="verificar" type="button" id="buttonVerifiacion">Verificacion</button>
+        <div class="input-group">
+           <!-- <p> No Tienes Cuenta?<a href="indexRegistro.html" class="">Registro</a> </p> -->
+        </div>
+    </form>
+    <script src="main.js"></script>
+
+    <!-- estos tambien -->
+    
+    <script src="./assets/js/logica/router/router.js"></script>
+
+   
+    <script src="./assets/js/logica/utils/HttpsVerificacion.js"></script>
+    <script src="./assets/js/logica/business/verificacionBussiness.js"></script>
+    <script src="./assets/js/logica/controller/verificacionController.js"></script>
+    <script src="./assets/js/logica/events/verificacionEvents.js"></script>
+</body>
+</html>
