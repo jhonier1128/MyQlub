@@ -8,7 +8,7 @@ function CallEndPointPost(url, jsonArgs) {
                  console.log(data);
 
 
-                // if (data.Codigo === 200 ){
+                // if (data.CodigoRespuesta === 200 ){
 
                 //     window.location.href = URL_API_BASE;
                 //     location.replace("verify.html");
