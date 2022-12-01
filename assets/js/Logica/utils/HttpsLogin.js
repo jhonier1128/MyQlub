@@ -23,6 +23,7 @@ function CallEndPointPost(url, jsonArgs) {
                 //       })
 
                 // }
+                
         },
         error: function () {
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")            
