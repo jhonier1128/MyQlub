@@ -1,4 +1,7 @@
 function CallEndPointPost(url, jsonArgs) {
+
+
+
     $.ajax({
         type: "POST",
         url: url,
@@ -7,22 +10,24 @@ function CallEndPointPost(url, jsonArgs) {
                 
                  console.log(data);
 
+                 const idper = data.Id;
 
-                // if (data.CodigoRespuesta === 200 ){
+                if (data.CodigoRespuesta === 200 ){
 
-                //     window.location.href = URL_API_BASE;
-                //     location.replace("verify.html");
-                //     location.href ="verify.html";
+                    localStorage.setItem("idPersonaQlub",idper);
+                    window.location.href = URL_API_BASE;
+                    location.replace("Dash.html");
+                    location.href ="Dash.html";
 
-                // }else{
+                }else{
 
-                //     Swal.fire({
-                //         icon: 'error',
-                //         title: 'Oops...',
-                //         text: 'Ya te encuentras registrado en nuestro sistema',
-                //       })
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Ya te encuentras registrado en nuestro sistema',
+                      })
 
-                // }
+                }
                 
         },
         error: function () {
