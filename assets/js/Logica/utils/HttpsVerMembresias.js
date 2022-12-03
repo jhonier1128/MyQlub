@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     $.ajax({
         type: "POST",
-        url: "http://52.175.225.67:63202/api/CuponComercio/CouponListAll",
+        url: "https://myqlub.app/api/CuponComercio/CouponListAll",
         data: {"IdQuery": 1},
         success: function (data) {
 

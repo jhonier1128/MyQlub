@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     $.ajax({
         type: "GET",
-        url: "http://52.175.225.67:63202//api/Comercios/GetListCategories",
+        url: "https://myqlub.app/api/Comercios/GetListCategories",
         data: "",
         success: function (data) {
 
