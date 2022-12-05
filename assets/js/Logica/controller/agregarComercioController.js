@@ -1,6 +1,6 @@
 function VamosAgregarComercioNavideño() {
 
-    var idUserr = localStorage.getItem("idPersonaQlub")
+    var idUserr = localStorage.getItem("IdUserRegis")
     var idCuponNav = localStorage.getItem("idMembresia1")
     var img = localStorage.getItem("imagenBaseNavideña")
 

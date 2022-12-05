@@ -1,32 +1,38 @@
 function CallEndPointPost(url, jsonArgs) {
 
-
-
     $.ajax({
         type: "POST",
         url: url,
         data: jsonArgs,
         success: function (data) {
-                
-                 console.log(data);
 
-                 const idper = data.Id;
+                //  const dataData = data.Data;
 
-                if (data.CodigoRespuesta === 200 ){
+                console.log(data);
 
-                    localStorage.setItem("idPersonaQlub",idper);
+                //  const idper = dataData.IdPerson;
+
+                if (data.CodeResponse === 200 ){
+
+                    // localStorage.setItem("idPersonaQlub",idper);
                     window.location.href = URL_API_BASE;
                     location.replace("Dash.html");
                     location.href ="Dash.html";
 
-                }else{
+                }else if (data.CodeResponse === 400 ){
 
                     Swal.fire({
                         icon: 'error',
                         title: 'Oops...',
-                        text: 'Ya te encuentras registrado en nuestro sistema',
+                        text: 'Credenciales Incorrectas',
                       })
 
+                }else{
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'No has verificado tu cuenta',
+                      })
                 }
                 
         },

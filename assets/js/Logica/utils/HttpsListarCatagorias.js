@@ -31,18 +31,6 @@ document.addEventListener('DOMContentLoaded', e => {
         data: "",
         success: function (data) {
 
-            // const catego = data;
-
-            // console.log(catego);
-
-            // categorias
-
-            // console.log(data[0].DescriptionCategory);
-
-            // addOptions("selectCategorias", data[0].DescriptionCategory);
-
-            // localStorage.setItem("listaCate", catego);
-
             for (const categorias of data) {
 
 

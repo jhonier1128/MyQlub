@@ -1,25 +1,90 @@
 function CrearPersona() {
 
-    const registrarPersona = {
+    const melo = document.getElementById("selectTipDocument").value
 
-        PrimerNombre: $("#Nombre").val(),
-        SegundoNombre: "",
-        PrimerApellidos:  $("#Apellido").val(),
-        SegundoApellido: "",
-        Sexo: "",
-        FechaNacimiento: "",
-        TipoDocumento: "",
-        Documento: $("#DocumentoRegistro").val(),
-        EstadoCivil: "",
-        Telefono: $("#Celular").val(),
-        Celular: $("#Celular").val(),
-        Direccion: "",
-        Correo: $("#Correo").val(),
-        IdProyecto: "6",
-        IdRol: "1",
+    if (melo == "Tarjeta de Identidad"){
+
+        const tarjeta = 1
+
+        const registrarPersona = {
+
+            FirstName: $("#Nombre").val(),
+            SecondName: "",
+            FirstSurname:  $("#Apellido").val(),
+            SecondSurname: "",
+            Sex: "",
+            DateOfBirth: "",
+            DocumentType: tarjeta,
+            Document: $("#DocumentoRegistro").val(),
+            MaritalStatus: "",
+            Phone: $("#Celular").val(),
+            CellPhone: $("#Celular").val(),
+            Direction: "",
+            Email: $("#Correo").val(),
+            IdProject: "6",
+            Passworrd: "",
+            IdRole: "1",
+    
+        }
+    
+        registro(registrarPersona)
+        
+    }else if (melo == "Cedula de Ciudadania"){
+
+        const cedula = 2;
+
+        const registrarPersona = {
+
+            FirstName: $("#Nombre").val(),
+            SecondName: "",
+            FirstSurname:  $("#Apellido").val(),
+            SecondSurname: "",
+            Sex: "",
+            DateOfBirth: "",
+            DocumentType: cedula,
+            Document: $("#DocumentoRegistro").val(),
+            MaritalStatus: "",
+            Phone: $("#Celular").val(),
+            CellPhone: $("#Celular").val(),
+            Direction: "",
+            Email: $("#Correo").val(),
+            IdProject: "6",
+            Passworrd: "",
+            IdRole: "1",
+    
+        }
+    
+        registro(registrarPersona)
+
+    }else if ( melo == "Pasaporte"){
+
+        const pasaporte = 3;
+
+        const registrarPersona = {
+
+            FirstName: $("#Nombre").val(),
+            SecondName: "",
+            FirstSurname:  $("#Apellido").val(),
+            SecondSurname: "",
+            Sex: "",
+            DateOfBirth: "",
+            DocumentType: pasaporte,
+            Document: $("#DocumentoRegistro").val(),
+            MaritalStatus: "",
+            Phone: $("#Celular").val(),
+            CellPhone: $("#Celular").val(),
+            Direction: "",
+            Email: $("#Correo").val(),
+            IdProject: "6",
+            Passworrd: "",
+            IdRole: "1",
+    
+        }
+    
+        registro(registrarPersona)
 
     }
 
-    registro(registrarPersona)
+    
 
 }

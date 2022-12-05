@@ -1,12 +1,13 @@
 function verificacionPersona() {
 
-    var loginn = localStorage.getItem("numCell")
+    var loginn = localStorage.getItem("phoneUser")
+    var IdUser = localStorage.getItem("IdUserRegis")
 
     const verificacionPersona = {
 
-        idPersona: "",
-        IdProyecto: "6",
-        CodigoVerificacion: $("codigoUser").val(),
+        IdPerson: IdUser,
+        IdProject: "6",
+        CodeVerification: $("#codigoUser").val(),
         Login: loginn,
        
     }

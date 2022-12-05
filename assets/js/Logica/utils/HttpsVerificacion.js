@@ -8,19 +8,19 @@ function CallEndPointPost(url, jsonArgs) {
                  console.log(data);
 
 
-                if (data === true ){
-
-                    window.location.href = URL_API_BASE;
-                    location.replace("indexLogin.html");
-                    location.href ="indexLogin.html";
-
-                }else{
+                if (data.CodeResponse == 400 ){
 
                     Swal.fire({
                         icon: 'error',
                         title: 'Oops...',
-                        text: 'Ya te encuentras registrado en nuestro sistema',
+                        text: 'Codigo de verificacion incorrecto',
                       })
+
+                }else if (data.CodeResponse == 200){
+
+                    window.location.href = URL_API_BASE;
+                    location.replace("indexLogin.html");
+                    location.href ="indexLogin.html";
 
                 }
         },

@@ -2,11 +2,10 @@ function LoginPersona() {
 
     const loginPersona = {
 
-        Usuario: "",
-        Login: $("#loginUser").val(),
-        IdProyecto: "6",
+        UserName: $("#loginUser").val(),
         Password: $("#passwordUser").val(),
-
+        IdProject: "6"
+    
     }
 
     login(loginPersona)
