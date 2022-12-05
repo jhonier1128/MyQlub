@@ -5,14 +5,15 @@ function recoveryPassword() {
 
     const recoverPass = {
 
+        IdProject: "6",
         Phone: numUser,
         Email: correo,
-        Password:"",
-        IdProject: "6"
+        Password: ""
+        
     
     }
 
-    recoveryPassword(recoverPass)
+    recoveryyPassword(recoverPass)
 
 }
 

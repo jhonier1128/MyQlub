@@ -1,4 +1,4 @@
-const btnRecoveryPass = document.getElementById("");
+const btnRecoveryPass = document.getElementById("buttonVerifiacionRecover");
 
 btnRecoveryPass.addEventListener("click", () =>{
 

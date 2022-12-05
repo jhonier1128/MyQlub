@@ -12,22 +12,22 @@ function CallEndPointPost(url, jsonArgs) {
 
                 //  const idper = dataData.IdPerson;
 
-                if (data.CodeResponse === 200 ){
+                // if (data.CodeResponse === 200 ){
 
                     // localStorage.setItem("idPersonaQlub",idper);
-                    window.location.href = URL_API_BASE;
-                    location.replace("indexLogin.html");
-                    location.href ="indexLogin.html";
+                //     window.location.href = URL_API_BASE;
+                //     location.replace("indexLogin.html");
+                //     location.href ="indexLogin.html";
 
-                }else if (data.CodeResponse != 200 ){
+                // }else if (data.CodeResponse != 200 ){
 
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'No pudimos crear tus nuevas credenciales',
-                      })
+                //     Swal.fire({
+                //         icon: 'error',
+                //         title: 'Oops...',
+                //         text: 'No pudimos crear tus nuevas credenciales',
+                //       })
 
-                }
+                // }
                 
         },
         error: function () {
