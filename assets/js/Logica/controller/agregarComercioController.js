@@ -5,23 +5,9 @@ function VamosAgregarComercioNavideño() {
     var img = localStorage.getItem("imagenBaseNavideña")
 
     const melo = document.getElementById("selectCategorias").value
-    // const ImgComercios = document.getElementById("ImgComercio").value;
-
-    // ImgComercios.addEventListener("change", () => {
-        
-    // const file = ImgComercios.files[0];
-    // const reader = new FileReader();
-
-    // reader.addEventListener("load", () => {
-    //     console.log(reader.result);
-    // });
-
-    // reader.readAsDataURL(file);
-
-    // })
 
 
-    console.log(img);
+    // console.log(img);
 
    
 
@@ -111,6 +97,7 @@ function VamosAgregarComercioSemSanta() {
 
     const melo = document.getElementById("selectCategorias").value
 
+    // console.log(imgSanta);
 
     if (melo == "Restaurantes y Bar") {
 
