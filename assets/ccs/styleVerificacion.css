@@ -9,11 +9,11 @@ body,html {
      margin: 0;
      font-family: 'Poppins', sans-serif;
      padding: 0;
-     background: #F70761; 
+     background: #1505e9; 
      /* fallback for old browsers */
      background: -webkit-linear-gradient(to right, #f85a12, #F70761);  
      /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient(to right, #f85a12, #F70761); 
+     background: linear-gradient(to right, #021e64, #b7dcf5); 
      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  
      display: flex;
@@ -55,7 +55,7 @@ body,html {
  .form-box input[type="text"]:focus,
  .form-box input[type="password"]:focus{
      width: 280px;
-     border-color: rgb(182, 11, 11);
+     border-color: #ffffff;
  }
  .form-box button[type="submit"]{
      border: 0;
@@ -71,6 +71,6 @@ body,html {
     border: 0;
     width: 140px;
     height: 40px;
-    color: #F70761;
+    color: #1505e9;
     font-size: 100%;
  }

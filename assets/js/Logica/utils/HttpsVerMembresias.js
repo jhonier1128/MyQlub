@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', e => {
                 element.innerHTML += `
                 <div class="planess">
                 
-                <div class="cardInversion" id="plan2" style="background:url(./assets/images/tarjRoja.jpeg);background-repeat: no-repeat;background-size: cover; height: 230px">
+                <div class="cardInversion" id="plan2" style="background:url(./assets/images/myqbluemembresia.png);background-repeat: no-repeat;background-size: cover; height: 230px">
                    <div style="margin-top: 70px">
                       <br>
                       <h3 style="margin-left: 0px;">${compras.DescripcionCupon}</h3>

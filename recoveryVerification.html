@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Club LOGIN</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/Logosplashsquare.png" />
-    <link rel="stylesheet" href="./assets/ccs/styleLogin.css"> </link>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
 
-    
+    <link rel="stylesheet" href="./assets/ccs/styleVerificacion.css"></link>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/Logosplashsquare.png" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
+ 
 
     <!-- copiar esto en todos los html -->
      
@@ -19,7 +19,6 @@
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer"></script>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
@@ -35,27 +34,29 @@
 </head>
 <body>
     <form action="" class="form-box">
-        <img src="./assets/images/logowhite.png" width="200" alt="100px">
-        <h2 class="form-title">Iniciar Sesión</h2>
-        <input type="text" placeholder="Username" id="loginUser">
-        <input type="password" placeholder="Password" id="passwordUser">
-        <button class="inicio" type="button" id="buttonLogin">Iniciar Sesión</button>
+        <img src="./assets/images/logowhite.png" width="200" alt="">
+        <h3 class="form-title">Verificación</h3>
+        <input type="text" placeholder="Codigo" id="codigoUserVeri">
+        <button class="verificar" type="button" id="buttonVerifiacionRecover">Verificacion</button>
         <div class="input-group">
-            <p> <a href="indexRegistro.html" class="registro">Crear Usuario</a> </p>
-            <p> <a href="recoveryPassword.html" class="registro">Recuperar Contraseña</a> </p>
+           <!-- <p> No Tienes Cuenta?<a href="indexRegistro.html" class="">Registro</a> </p> -->
         </div>
     </form>
     <script src="main.js"></script>
-
 
     <!-- estos tambien -->
     
     <script src="./assets/js/logica/router/router.js"></script>
 
    
-    <script src="./assets/js/logica/utils/HttpsLogin.js"></script>
-    <script src="./assets/js/logica/business/loginBussiness.js"></script>
-    <script src="./assets/js/logica/controller/loginController.js"></script>
-    <script src="./assets/js/logica/events/loginEvents.js"></script>
+    <script src="./assets/js/logica/utils/HttpsVerificacion.js"></script>
+    <script src="./assets/js/logica/business/verificacionBussiness.js"></script>
+    <script src="./assets/js/logica/controller/verificacionController.js"></script>
+    <script src="./assets/js/logica/events/verificationRecoveryPassword.js"></script>
+
+    <script src="./assets/js/logica/business/recoveryPasswordBussiness.js"></script>
+    <script src="./assets/js/logica/controller/recoveryPasswordController.js"></script>
+    <script src="./assets/js/logica/events/recoveryPasswordEvents.js"></script>
+
 </body>
 </html>

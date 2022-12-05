@@ -8,11 +8,11 @@ body,html {
 body{
     margin: 0;
     padding: 0;
-    background: #F70761; 
+    background: #3f76ff; 
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f85a12, #F70761);  
+    background: -webkit-linear-gradient(to right, #3f76ff, #3f76ff);  
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f85a12, #F70761); 
+    background: linear-gradient(to right, #021e64, #b7dcf5); 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 
@@ -37,7 +37,7 @@ body{
     border: 0;
     width: 140px;
     height: 40px;
-    color: #F70761;
+    color: #1505e9;
     font-size: 100%;
 }
 
@@ -57,6 +57,7 @@ body{
     font-weight: 500;
 }
 .form-box input[type="text"],
+.form-box input[type="email"],
 .form-box input[type="password"],
 .form-box button[type="submit"]{
     border: 0;

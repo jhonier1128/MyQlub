@@ -4,10 +4,10 @@
 
 /*-------------ROOT VARAIBLES-----------*/
 :root{
-    --color-primary: #f60761;
-    --color-danger:#f60761;
+    --color-primary: #3f76ff;
+    --color-danger:#3f76ff;
     --color-success: #41f1b6;
-    --color-warning: #f60761;
+    --color-warning: #3f76ff;
     --color-white: #202528;
     --color-info-dark: #7d8da1;
     --color-info-light: #dce1eb;

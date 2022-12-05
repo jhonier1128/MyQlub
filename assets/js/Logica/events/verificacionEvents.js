@@ -1,5 +1,6 @@
 const btnVerifiacion = document.getElementById("buttonVerifiacion"); 
 
+
 btnVerifiacion.addEventListener('click', () => {
 
     const PasswordVerificacion = document.getElementById("codigoUser").value
@@ -18,3 +19,4 @@ btnVerifiacion.addEventListener('click', () => {
         verificacionPersona();
     }
 })
+

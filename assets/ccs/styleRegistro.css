@@ -16,7 +16,7 @@ body{
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f85a12, #F70761);  
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f85a12, #F70761); 
+    background: linear-gradient(to right, #021e64, #b7dcf5); 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 650px;
     display: flex;
@@ -53,6 +53,7 @@ h3{
 }
 img{
  margin-left: 25%;
+ height: 80px;
 }
 form .grupo{
     position: relative;
@@ -111,7 +112,7 @@ input:valid~label{
     width: 0%;
     bottom: 0;
     position: absolute;
-    background: linear-gradient(to right, #f85a12, #F70761);  
+    background: linear-gradient(to right, #1505e9, #1505e9);  
     transition: 0.3 ease width;
     left: 0;
 }
@@ -122,7 +123,7 @@ input:focus~.barra::before{
 }
 button{
     font-family: 'roboto';
-    background: #F70761; 
+    background: #1505e9; 
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f85a12, #F70761);  
     /* Chrome 10-25, Safari 5.1-6 */
@@ -133,12 +134,12 @@ button{
     display: block;
     width: 60%;
     margin: 10px auto;
-    color: #fff;
+    color: #1505e9;
     height: 40px;
     font-size: 20px;
     cursor: pointer;
     border-radius: 20px;
-    color: #F70761;
+    color: #1505e9;
 }
 input-group{
     color: #fff;

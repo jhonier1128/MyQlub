@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200&family=Saira+Condensed:wght@100;200;300;400&display=swap');
 
 :root {
-    --green: #f60761;
-    --lead: #f60761;
+    --green: #3f76ff;
+    --lead: #3f76ff;
     --verde: #40992e;
     --gris: rgba(49, 49, 49, 0.685);
     --grisos: rgba(15, 15, 15, 0.685);
@@ -10,11 +10,11 @@
     --rojo: #b60c0c;
     --aqua: #1591caf1;
     --rosa: #d829a4;
-    --blue: #f60761;
-    --violet: #f60761;
+    --blue: #08297a;
+    --violet: #031c5c;
     --text-white: hsl(0, 0%, 100%);
     --text-light-gray: hsl(0, 0%, 90%);
-    --body-bg-color: hsl(203, 67%, 2%);
+    --body-bg-color: hsl(0, 0%, 0%);
     --glass-bg-color: hsl(0, 0%, 100%, 0.5);
     --border-color: hsl(0, 0%, 100%, 0.25);
     --blur: blur(10px);
