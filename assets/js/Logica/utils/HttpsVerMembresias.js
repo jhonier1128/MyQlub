@@ -7,11 +7,8 @@ document.addEventListener('DOMContentLoaded', e => {
         success: function (data) {
 
             for ( const compras of data) {
-
             console.log(compras);
-            console.log(compras.Id);
-
-            
+            console.log(compras.Id);            
 
             const productList = document.getElementById("product-list");
             const element = document.createElement("div");
