@@ -11,7 +11,7 @@ btnVerifiacion.addEventListener('click', () => {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Ingresa Tus Login',
+            text: 'Ingresa Tu Codigo de verificación',
         })
 
     }else {

@@ -19,7 +19,7 @@ function CallEndPointPost(url, jsonArgs) {
                     location.replace("Dash.html");
                     location.href ="Dash.html";
 
-                }else if (data.CodeResponse === 400 ){
+                }else if (data.CodeResponse === 402 ){
 
                     Swal.fire({
                         icon: 'error',

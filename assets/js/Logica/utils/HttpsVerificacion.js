@@ -8,7 +8,7 @@ function CallEndPointPost(url, jsonArgs) {
                  console.log(data);
 
 
-                if (data.CodeResponse == 400 ){
+                if (data.CodeResponse == 405 ){
 
                     Swal.fire({
                         icon: 'error',
