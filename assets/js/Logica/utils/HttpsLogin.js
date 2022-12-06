@@ -12,14 +12,14 @@ function CallEndPointPost(url, jsonArgs) {
 
                 //  const idper = dataData.IdPerson;
 
-                if (data.CodeResponse === 200 ){
+                if (data.CodeResponse == 200 ){
 
                     // localStorage.setItem("idPersonaQlub",idper);
                     window.location.href = URL_API_BASE;
                     location.replace("Dash.html");
                     location.href ="Dash.html";
 
-                }else if (data.CodeResponse === 402 ){
+                }else if (data.CodeResponse == 402 ){
 
                     Swal.fire({
                         icon: 'error',
@@ -27,11 +27,19 @@ function CallEndPointPost(url, jsonArgs) {
                         text: 'Credenciales Incorrectas',
                       })
 
-                }else{
+                }else if (data.CodeResponse == 401 ){
+
                     Swal.fire({
                         icon: 'error',
                         title: 'Oops...',
                         text: 'No has verificado tu cuenta',
+                      })
+
+                }else{
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'No pudimos Hacer Nada',
                       })
                 }
                 
