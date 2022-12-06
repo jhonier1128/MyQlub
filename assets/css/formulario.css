@@ -62,3 +62,24 @@
     border-radius: 10px;
   }
   
+
+  @media (max-width: 500px) {
+
+    #cuentaM{
+      margin-top: 60px;
+      width: 100%;
+      margin-left: -10px;
+    }
+
+    #cuentaMl{
+      margin-top: 60px;
+      width: 100%;
+      margin-left: -4px;
+    }
+
+    .form-register{
+      margin-top: 30px;
+      margin-left: 50px;
+    }
+
+  }
