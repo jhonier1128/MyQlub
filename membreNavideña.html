@@ -49,7 +49,7 @@
                 <div class="top">
                     <div class="logo">
                         <br>
-                        <img src="./assets/images/Logosplashsquare.png" style="height: 130px;">
+                        <img src="./assets/images/Logosplashsquare.png" style="height: 200px; margin-top: -50px;">
 
                     </div>
                     <div class="close" id="close-btn">
@@ -138,7 +138,7 @@
                     <h4>Categoria del comercio</h4>
                     <select class="controls" id="selectCategorias" name="selectCategorias">
                         <option>Seleccione Una Categoria...</option>
-                      </select>
+                    </select>
                     <h4>Formulario Afiliar Comercio</h4>
                     <b>Nombre del Comercio</b>
                     <input class="controls" type="text" name="nom" id="nomComercio" required>
@@ -148,7 +148,47 @@
                     <input class="controls" type="file" name="img" id="ImgComercio" required>
 
                     <button class="botons" type="button" id="agregarComercioNav"> REGISTRAR</button>
-                  </section>
+                </section>
+                <!-- <section class="form-register">
+                    <h4>Categoria del comercio</h4>
+                    <select class="controls" id="selectCategorias" name="selectCategorias">
+                        <option>Seleccione Una Categoria...</option>
+                    </select>
+                    <h4>Porcentaje de Descuento</h4>
+                    <select class="controls" id="selectDescuento" name="selectCategorias">
+                        <option>Seleccione Un % descuento</option>
+                        <option>10%</option>
+                        <option>15%</option>
+                        <option>20%</option>
+                        <option>25%</option>
+                        <option>30%</option>
+                        <option>35%</option>
+                        <option>40%</option>
+                        <option>45%</option>
+                        <option>50%</option>
+                        <option>55%</option>
+                        <option>60%</option>
+                        <option>65%</option>
+                        <option>70%</option>
+                        <option>75%</option>
+                        <option>80%</option>
+                        <option>85%</option>
+                        <option>90%</option>
+                        <option>95%</option>
+                        <option>100%</option>
+                    </select>
+                    <h4>Formulario Afiliar Comercio</h4>
+                    <b>Nombre del Comercio</b>
+                    <input class="controls" type="text" name="nom" id="nomComercio" required>
+                    <b>Dirección</b>
+                    <input class="controls" type="text" name="dire" id="DireComercio" required>
+                    <b>Descripción</b>
+                    <input class="controls" type="text" name="dire" id="DireComercio" required>
+                    <b>Agrega una imagen</b>
+                    <input class="controls" type="file" name="img" id="ImgComercio" required>
+
+                    <button class="botons" type="button" id="agregarComercioNav"> REGISTRAR</button>
+                </section> -->
 
                 <div class="right">
                     <div class="top">
@@ -177,25 +217,25 @@
     </div>
 
     <script>
-        
-    const ImgComercios = document.getElementById("ImgComercio");
 
-    ImgComercios.addEventListener("change", () => {
-        
-    const file = ImgComercios.files[0];
-    const reader = new FileReader();
+        const ImgComercios = document.getElementById("ImgComercio");
 
-    reader.addEventListener("load", () => {
+        ImgComercios.addEventListener("change", () => {
 
-       const comoseria = reader.result
- 
-       localStorage.setItem("imagenBaseNavideña", comoseria)
+            const file = ImgComercios.files[0];
+            const reader = new FileReader();
 
-    });
+            reader.addEventListener("load", () => {
 
-    reader.readAsDataURL(file);
+                const comoseria = reader.result
 
-    })
+                localStorage.setItem("imagenBaseNavideña", comoseria)
+
+            });
+
+            reader.readAsDataURL(file);
+
+        })
     </script>
 
     <script>
@@ -250,7 +290,7 @@
 
     <script src="./assets/js/logica/router/router.js"></script>
 
-   
+
     <script src="./assets/js/logica/utils/HttpsAgregarComercio.js"></script>
     <script src="./assets/js/logica/business/agregarComercioBussiness.js"></script>
     <script src="./assets/js/logica/controller/agregarComercioController.js"></script>
