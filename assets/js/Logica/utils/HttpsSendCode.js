@@ -13,8 +13,10 @@ function CallEndPointPost(url, jsonArgs) {
                 if (data.CodeResponse == 200 ){
 
                     const PhoneRecover = response.Phone;
+                    const IdUserRecover = response.IdPerson;
 
                     localStorage.setItem("phoneUserRecover", PhoneRecover);
+                    localStorage.setItem("IdUserRecovery", IdUserRecover);
 
                     window.location.href = URL_API_BASE;
                     location.replace("recoveryVerification.html");
