@@ -35,6 +35,14 @@ function CallEndPointPost(url, jsonArgs) {
                         text: 'No has verificado tu cuenta',
                       })
 
+                }else if (data.CodeResponse == 404 ){
+
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'No te encuentras registrado',
+                      })
+
                 }else{
                     Swal.fire({
                         icon: 'error',
