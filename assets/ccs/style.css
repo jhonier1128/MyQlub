@@ -246,7 +246,8 @@ header label{
 .newsletter{
     text-align: center;
     padding:5rem 1rem;
-    background:url(images/subscribe-bg.png) no-repeat;
+    background-color: #F70761;
+    /* background:url() no-repeat; */
     background-size: cover;
     background-position: center;
 }
