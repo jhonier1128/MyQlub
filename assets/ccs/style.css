@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
 :root{
-    --purple:#f85a12;
-    --pink:#F70761;
+    --purple:#07369bbb;
+    --pink:#07369bbb;
     --gradient:linear-gradient(90deg, var(--purple), var(--pink));
 }
 
@@ -59,7 +59,7 @@ section{
     color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 3.5rem;
+    font-size: 3.5rem;  
     text-transform: uppercase;
     padding:1rem;
 }
@@ -70,10 +70,11 @@ section{
     text-align: center;
     padding: 7px;
     position: relative;
-    border: 2px solid #F70761;
+    border: 2px solid #1a07cc;
     font-size: 15px;
-    color: #F70761;
+    color: #1a07cc;
     margin-left: 0px;
+    overflow: hidden;
 }
 
 .navbar{
@@ -246,7 +247,7 @@ header label{
 .newsletter{
     text-align: center;
     padding:5rem 1rem;
-    background-color: #F70761;
+    background-color: #07369bbb;
     /* background:url() no-repeat; */
     background-size: cover;
     background-position: center;
