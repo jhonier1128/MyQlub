@@ -1,10 +1,16 @@
 document.addEventListener('DOMContentLoaded', e => {
 
+    var loading = document.getElementById('cargando')
+    loading.style.display = 'flex'
+
     $.ajax({
         type: "POST",
         url: "https://myqlub.app/api/CuponComercio/CouponListAll",
         data: {"IdQuery": 1},
         success: function (data) {
+
+            loading.style.display = 'none'
+
 
             for ( const compras of data) {
             console.log(compras);

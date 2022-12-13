@@ -1,9 +1,15 @@
 function CallEndPointPostComercio(url, jsonArgs) {
+
+    var loading = document.getElementById('cargando2')
+    loading.style.display = 'flex'
+
     $.ajax({
         type: "POST",
         url: url,
         data: jsonArgs,
         success: function (data) {
+
+            loading.style.display = 'none'
                 
 
                 if (data.Codigo === 200 ){

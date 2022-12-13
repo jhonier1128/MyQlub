@@ -1,5 +1,8 @@
 function CallEndPointPost(url, jsonArgs) {
 
+    var loading = document.getElementById('cargando')
+    loading.style.display = 'flex'
+
     $.ajax({
         type: "POST",
         url: url,
@@ -12,8 +15,10 @@ function CallEndPointPost(url, jsonArgs) {
 
                 //  const idper = dataData.IdPerson;
 
-                if (data.CodeResponse == 200 ){
+                
 
+                if (data.CodeResponse == 200 ){
+                    loading.style.display = 'none'
                     // localStorage.setItem("idPersonaQlub",idper);
                     window.location.href = URL_API_BASE;
                     location.replace("Dash.html");

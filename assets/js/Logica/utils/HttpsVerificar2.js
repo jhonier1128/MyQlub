@@ -20,11 +20,17 @@ function recuperarContrasenia() {
 
 
 function CallEndPointPostVeri(url, jsonArgs) {
+
+    var loading = document.getElementById('cargando')
+    loading.style.display = 'flex'
+
     $.ajax({
         type: "POST",
         url: url,
         data: jsonArgs,
         success: function (data) {
+
+            loading.style.display = 'none'
 
             console.log(data);
 
