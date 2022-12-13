@@ -37,6 +37,7 @@ function CallEndPointPostComercio(url, jsonArgs) {
                 }
         },
         error: function () {
+            loading.style.display = 'none'
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")            
         }
     });
