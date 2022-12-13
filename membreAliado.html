@@ -138,17 +138,18 @@
                     <h4>Categoria del comercio</h4>
                     <select class="controls" id="selectCategorias" name="selectCategorias">
                         <option>Seleccione Una Categoria...</option>
-                      </select>
+                    </select>
                     <h4>Formulario Afiliar Comercio</h4>
                     <b>Nombre del Comercio</b>
                     <input class="controls" type="text" name="nom" id="nomComercio" required>
                     <b>Dirección</b>
                     <input class="controls" type="text" name="dire" id="DireComercio" required>
                     <b>Agrega una imagen</b>
-                    <input class="controls" type="file" name="img" id="ImgComercio" enctype="multipart/form-data" required>
+                    <input class="controls" type="file" name="img" id="ImgComercio" enctype="multipart/form-data"
+                        required>
 
                     <button class="botons" type="button" id="agregarComercioAliado"> REGISTRAR</button>
-                  </section>
+                </section>
 
                 <div class="right">
                     <div class="top">
@@ -158,6 +159,14 @@
                     </div>
                 </div>
 
+                <div id="cargando2">
+                    <lottie-player src="https://lottie.host/2d2fef52-01a5-403e-b33e-6db96d5ebaec/AiOPgStXGM.json" 
+                    background="transparent" 
+                    speed="1" 
+                    loop 
+                    autoplay>
+                    </lottie-player>
+                </div>
 
 
             </div>
@@ -165,37 +174,31 @@
             <!-- End of Main-->
 
         </div>
-        <!-- <div id="cargando">
-           
-            <lottie-player src="https://lottie.host/b7a7a4e9-b990-4c20-815d-56277221123f/QFWYzTSEkP.json" 
-            background="transparent" 
-            speed="1" 
-            loop 
-            autoplay>
-            </lottie-player>
-        </div> -->
+        
     </div>
+
+    
 
     <script>
         const ImgComercios = document.getElementById("ImgComercio");
-    
+
         ImgComercios.addEventListener("change", () => {
-            
-        const file = ImgComercios.files[0];
-        const reader = new FileReader();
-    
-        reader.addEventListener("load", () => {
-    
-           const comoseria = reader.result
-           console.log(comoseria);
-           localStorage.setItem("imagenBaseAliada", comoseria)
-    
-        });
-    
-        reader.readAsDataURL(file);
-    
+
+            const file = ImgComercios.files[0];
+            const reader = new FileReader();
+
+            reader.addEventListener("load", () => {
+
+                const comoseria = reader.result
+                console.log(comoseria);
+                localStorage.setItem("imagenBaseAliada", comoseria)
+
+            });
+
+            reader.readAsDataURL(file);
+
         })
-        </script>
+    </script>
 
 
     <script>
@@ -250,7 +253,7 @@
 
     <script src="./assets/js/logica/router/router.js"></script>
 
-   
+
     <script src="./assets/js/logica/utils/HttpsAgregarComercio.js"></script>
     <script src="./assets/js/logica/business/agregarComercioBussiness.js"></script>
     <script src="./assets/js/logica/controller/agregarComercioController.js"></script>

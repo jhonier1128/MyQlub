@@ -75,6 +75,15 @@ section{
     color: #07369bbb;
     margin-left: 0px;
     overflow: hidden;
+    
+}
+
+.ini:hover{
+
+background: #07369bbb;
+color: #fff;
+border: 2px solid floralwhite;
+
 }
 
 .navbar{

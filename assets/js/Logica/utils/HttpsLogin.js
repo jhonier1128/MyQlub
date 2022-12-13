@@ -1,5 +1,8 @@
 function CallEndPointPost(url, jsonArgs) {
 
+    var loading = document.getElementById('cargando')
+    loading.style.display = 'flex'
+
     $.ajax({
         type: "POST",
         url: url,
@@ -7,13 +10,15 @@ function CallEndPointPost(url, jsonArgs) {
         success: function (data) {
 
                 //  const dataData = data.Data;
-
+                loading.style.display = 'none'
                 console.log(data);
 
                 //  const idper = dataData.IdPerson;
 
-                if (data.CodeResponse == 200 ){
+                
 
+                if (data.CodeResponse == 200 ){
+                
                     // localStorage.setItem("idPersonaQlub",idper);
                     window.location.href = URL_API_BASE;
                     location.replace("Dash.html");
@@ -53,6 +58,7 @@ function CallEndPointPost(url, jsonArgs) {
                 
         },
         error: function () {
+            loading.style.display = 'none'
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")            
         }
     });

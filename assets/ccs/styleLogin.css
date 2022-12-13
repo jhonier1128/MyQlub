@@ -31,14 +31,30 @@ body{
     border-radius: 10%;
     border: 0%;
 }
+
+.registro:hover{
+
+    color: #07369bbb;
+
+}
+
 .inicio{
     align-items: center;
     border-radius: 20px;
     border: 0;
     width: 140px;
     height: 40px;
-    color: #1505e9;
+    color: #083eb3bb;
     font-size: 100%;
+}
+
+.inicio:hover{
+
+transition: 0.6s;
+ background-color: #07369bbb;
+ color: #fff;
+ border: 2px solid #fff
+
 }
 
 .form-box{

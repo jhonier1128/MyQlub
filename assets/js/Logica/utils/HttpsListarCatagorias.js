@@ -1,14 +1,3 @@
-
-
-
-// function cargar_provincias() {
-//     var array = ;
-
-//     array.sort();
-
-//     addOptions("selectCategorias", array);
-// }
-
 function addOptions(domElement, array) {
     
     var select = document.getElementsByName(domElement)[0];
@@ -22,7 +11,8 @@ function addOptions(domElement, array) {
 
 document.addEventListener('DOMContentLoaded', e => {
 
-
+    var loading = document.getElementById('cargando2')
+    loading.style.display = 'flex'
 
 
     $.ajax({
@@ -30,6 +20,8 @@ document.addEventListener('DOMContentLoaded', e => {
         url: "https://myqlub.app/api/Comercios/GetListCategories",
         data: "",
         success: function (data) {
+
+            loading.style.display = 'none'
 
             for (const categorias of data) {
 
@@ -46,6 +38,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
         },
         error: function () {
+            loading.style.display = 'none'
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")
         }
     });

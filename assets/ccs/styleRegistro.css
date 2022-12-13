@@ -70,6 +70,20 @@ form .grupo{
     color: rgb(114, 112, 112);
   }
 
+.hovere:hover{
+    transition: 0.7s;
+        background-color: #07369bbb;
+        color: #fff;
+        border: 2px solid #fff; 
+}
+
+.iniMelo:hover{
+    
+    transition: 0.7s;
+    color: #385594bb;
+
+}
+
 input{
     background: none;
     color: #f5efef;

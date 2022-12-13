@@ -1,10 +1,15 @@
 function CallEndPointPost(url, jsonArgs) {
 
+    var loading = document.getElementById('cargando')
+    loading.style.display = 'flex'
+
     $.ajax({
         type: "POST",
         url: url,
         data: jsonArgs,
         success: function (data) {
+
+            loading.style.display = 'none'
 
             const dataData = data.Data;
 
@@ -40,6 +45,7 @@ function CallEndPointPost(url, jsonArgs) {
 
         },
         error: function () {
+            loading.style.display = 'none'
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")
         }
     });
