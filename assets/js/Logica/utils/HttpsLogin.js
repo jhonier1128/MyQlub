@@ -10,7 +10,7 @@ function CallEndPointPost(url, jsonArgs) {
         success: function (data) {
 
                 //  const dataData = data.Data;
-
+                loading.style.display = 'none'
                 console.log(data);
 
                 //  const idper = dataData.IdPerson;
@@ -18,7 +18,7 @@ function CallEndPointPost(url, jsonArgs) {
                 
 
                 if (data.CodeResponse == 200 ){
-                    loading.style.display = 'none'
+                
                     // localStorage.setItem("idPersonaQlub",idper);
                     window.location.href = URL_API_BASE;
                     location.replace("Dash.html");
