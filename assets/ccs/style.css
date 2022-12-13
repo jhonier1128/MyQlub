@@ -131,7 +131,7 @@ header label{
     display: flex;
     align-items: center;
     justify-content: center;
-    background:url(images/home-bg-img.png) no-repeat;
+    background:url(images/home-bg-img.png);
     background-size: cover;
     background-position: center;
 }
@@ -204,7 +204,7 @@ header label{
 }
 
 .about{
-    background:url(images/about-bg.png) no-repeat;
+    background:url(../assets/images/about-bg.png)!important;
     background-size: cover;
     background-position: center;
     padding-bottom: 3rem;
@@ -247,7 +247,7 @@ header label{
 .newsletter{
     text-align: center;
     padding:5rem 1rem;
-    background-color: #07369bbb;
+    background-color: #f6f6f8bb;
     /* background:url() no-repeat; */
     background-size: cover;
     background-position: center;
@@ -485,7 +485,7 @@ header label{
 
 .footer{
     padding-top: 3rem;
-    background:url(images/footer-bg.png) no-repeat;
+    background:url(./assets) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -642,9 +642,9 @@ header label{
         background-position: right;
     }
 
-    .newsletter p{
+    /* .newsletter p{
         width:auto;
-    }
+    } */
 
 }
 
