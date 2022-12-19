@@ -40,4 +40,5 @@ function CallEndPointPostComercio(url, jsonArgs) {
             alert("Ha ocurrido un error, por favor vuelva a intentarlo")            
         }
     });
+    
 }
