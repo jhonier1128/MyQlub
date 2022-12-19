@@ -11,7 +11,6 @@ function CallEndPointPostComercio(url, jsonArgs) {
 
             loading.style.display = 'none'
                 
-
                 if (data.Codigo === 200 ){
 
                     Swal.fire({
